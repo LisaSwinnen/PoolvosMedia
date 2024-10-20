@@ -60,14 +60,6 @@
                   <a class="nav-link" href="contact.html">Contact </a>
                 </li>
               </ul>
-              <div class="user_option">
-                <a href="">
-                  <img src="images/user.png" alt="">
-                </a>
-                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                </form>
-              </div>
             </div>
           </div>
         </nav>
@@ -78,44 +70,51 @@
 
   <!-- contact section -->
 
-  <section class="contact_section layout_padding">
-    <div class="container">
+<section class="contact_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Neem contact op met ons</h2>
+    </div>
 
-      <div class="heading_container">
-        <h2>
-          Neem contact op met ons
-        </h2>
-      </div>
-      <div class="">
-        <div class="">
-          <div class="row">
-            <div class="col-md-9 mx-auto">
-              <div class="contact-form">
-                <form action="">
-                  <div>
-                    <input type="text" placeholder="Naam ">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Telefoonnummer">
-                  </div>
-                  <div>
-                    <input type="email" placeholder="E-mailadres">
-                  </div>
-                  <div>
-                    <input type="text" placeholder="Bericht" class="input_message">
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover">
-                      Verzenden
-                    </button>
-                  </div>
-                </form>
-              </div>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Hidden access key -->
+      <input type="hidden" name="access_key" value="68cad86e-741f-475f-b6d8-4be5032a3e3f">
+
+      <div class="row">
+        <div class="col-md-9 mx-auto">
+          <div class="contact-form">
+            <!-- Name Field -->
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Naam" class="form-control" required>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-group">
+              <input type="text" name="phone" placeholder="Telefoonnummer" class="form-control" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+              <input type="email" name="email" placeholder="E-mailadres" class="form-control" required>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <textarea name="message" placeholder="Bericht" class="form-control input_message" rows="5" required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary btn_on-hover">
+                Verzenden
+              </button>
             </div>
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </form>
+  </div>
+</section>
 
 
   <!-- end contact section -->
@@ -153,7 +152,7 @@
                 <img src="images/envelope-white.png" width="18px" alt="">
               </div>
               <p>
-                siebe@poolvosmedia.be
+                contact@poolvosmedia.be
               </p>
             </div>
           </div>
