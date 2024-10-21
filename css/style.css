@@ -27,13 +27,6 @@ body {
 .layout_padding-bottom {
   padding-bottom: 75px;
 }
-
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Voorkom horizontaal scrollen */
-}
-
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
