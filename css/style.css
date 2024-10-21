@@ -28,6 +28,18 @@ body {
   padding-bottom: 75px;
 }
 
+.{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Voorkom horizontaal scrollen */
+}
+
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +51,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+    width: 100%; /* Zorg dat het element full-width is *
 }
 
 .heading_container h2 {
@@ -71,11 +84,25 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
+  width: 100vw; /* Zorg dat het element de volledige breedte beslaat */
   background-color: #b5caee;
   background-image: url(../images/hero-bg.jpg);
   background-size: cover;
+   background-position: center; /* Zorg dat de achtergrond mooi gecentreerd is */
 }
 
+  /* Media query voor mobiele apparaten */
+@media (max-width: 768px) {
+  .heading_container {
+    padding: 0 15px; /* Voeg wat padding toe voor betere leesbaarheid op mobiel */
+  }
+  
+  .hero_area {
+    height: 100vh;
+    width: 100%; /* Zorg dat het element op mobiel ook de volledige breedte heeft */
+  }
+}
+  
 .sub_page .hero_area {
   height: auto;
 }
